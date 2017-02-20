@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+</head>
+<body ng-app="test">
+
+<div  ng-view id="app">
+    <div ng-controller="testController as vm">
+        <button ng-click='vm.panic()'>test</button>
+        <p>test panic {{vm.text}}</p>
+    </div>
+</div>
+
+<script src="dist/js/app.min.js"></script>
+</body>
+</html>
